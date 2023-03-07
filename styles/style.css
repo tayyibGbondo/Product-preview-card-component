@@ -91,4 +91,8 @@ button {
   .desktop {
     display: none;
   }
+  .product-detail h2 {
+    font-size: 40px;
+    color: hsl(212, 21%, 14%);
+  }
 }
