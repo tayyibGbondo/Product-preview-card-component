@@ -1,0 +1,85 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(30, 38%, 92%);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+.products-container {
+  display: flex;
+  width: 50%;
+  border-radius: 10px;
+}
+.products-container img {
+  width: 350px;
+  height: 100%;
+  object-fit: cover;
+}
+.product-detail {
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.product-detail h2 {
+  font-size: 50px;
+  color: hsl(212, 21%, 14%);
+}
+.product-detail p {
+  font-size: 20px;
+  color: hsl(228, 12%, 48%);
+}
+.name {
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: hsl(228, 12%, 48%);
+}
+.cost {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 25px;
+  color: hsl(228, 12%, 48%);
+}
+.cost span {
+  text-decoration: line-through;
+}
+.cost h1 {
+  color: hsl(158, 36%, 37%);
+}
+button {
+  background-color: hsl(158, 63%, 13%);
+  padding: 15px;
+  border: unset;
+  border-radius: 10px;
+  text-align: 20px;
+  font-weight: 800;
+  color: white;
+}
+
+/*Responsive design*/
+@media screen and (max-width: 765px) {
+  body {
+    padding: 20px;
+    display: block;
+  }
+  .products-container {
+    display: flex;
+    width: 100%;
+    border-radius: 10px;
+    overflow: unset;
+    flex-direction: column;
+  }
+  .products-container img {
+    height: 100%;
+    width: 100%;
+  }
+}
