@@ -64,6 +64,9 @@ button {
   font-weight: 800;
   color: white;
 }
+.mobile {
+  display: none;
+}
 
 /*Responsive design*/
 @media screen and (max-width: 765px) {
@@ -81,5 +84,11 @@ button {
   .products-container img {
     height: 100%;
     width: 100%;
+  }
+  .mobile {
+    display: block;
+  }
+  .desktop {
+    display: none;
   }
 }
